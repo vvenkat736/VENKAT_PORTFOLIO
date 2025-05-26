@@ -358,7 +358,7 @@ footer a {
   perspective: 1000px;
   width: 350px;
   height: 300px;
-  margin: 0 auto 40px auto; /* bottom margin added */
+  margin: 0 auto 40px auto; 
   position: relative;
 }
 
