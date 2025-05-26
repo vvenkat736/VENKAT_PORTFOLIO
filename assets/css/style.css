@@ -354,28 +354,28 @@ footer a {
   color: white;
 }
 
-/* Business Card Flip Effect */
 .business-card {
-  width: 300px;
-  height: 180px;
   perspective: 1000px;
-  margin: 20px auto;
-}
-
-.business-card-inner {
-  width: 100%;
-  height: 100%;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
+  width: 350px;
+  height: 300px;
+  margin: 0 auto 40px auto; /* bottom margin added */
   position: relative;
 }
 
-.business-card:hover .business-card-inner,
-.business-card:focus-within .business-card-inner {
+.business-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.business-card:hover .business-card-inner {
   transform: rotateY(180deg);
 }
 
-.business-card-front, .business-card-back {
+.business-card-front,
+.business-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -384,11 +384,12 @@ footer a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
   padding: 20px;
   font-weight: bold;
+  box-sizing: border-box;
 }
 
 /* Front Side */
@@ -408,4 +409,3 @@ footer a {
 .business-card-back i {
   margin-right: 8px;
 }
-
