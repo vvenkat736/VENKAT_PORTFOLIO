@@ -2,10 +2,10 @@
 
 /* Global variables */
 :root {
-  --primary: #ff5555;
+  --primary: #e81b1b;
   --primary-hover: #e43232;
-  --dark-primary: #000;
-  --dark-secondary: #1e1b1b;
+  --dark-primary: #00000095;
+  --dark-secondary: #1e1b1bf0;
   --text-color: #c4c4c4;
 }
 
