@@ -536,3 +536,233 @@ footer a {
 .business-card-back i {
   margin-right: 8px;
 }
+/* Skills Section */
+.skills-section {
+    background-color: var(--dark-primary);
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.skill-card {
+    background-color: var(--dark-secondary);
+    border-radius: 8px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.skill-bar {
+    height: 8px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    background: var(--primary);
+    border-radius: 4px;
+}
+
+/* Achievements Section */
+.achievements-section {
+    background-color: var(--dark-secondary);
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.achievements-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.achievement-card {
+    background-color: var(--dark-primary);
+    border-radius: 8px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.achievement-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--primary);
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.achievement-icon {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.achievement-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.achievement-card p {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.achievement-date {
+    display: inline-block;
+    padding: 5px 15px;
+    background: var(--primary);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Certifications Section */
+.certifications-section {
+    background-color: var(--dark-primary);
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.certifications-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.certification-card {
+    background-color: var(--dark-secondary);
+    border-radius: 8px;
+    padding: 25px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.certification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.certification-icon {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-right: 20px;
+    min-width: 40px;
+    text-align: center;
+}
+
+.certification-content {
+    flex: 1;
+}
+
+.certification-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.certification-content p {
+    color: var(--text-color);
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
+.btn-certificate {
+    display: inline-block;
+    padding: 6px 12px;
+    background: var(--primary);
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.btn-certificate:hover {
+    background: var(--primary-hover);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .skills-container,
+    .achievements-container,
+    .certifications-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .certification-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .certification-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-section,
+    .achievements-section,
+    .certifications-section {
+        padding: 60px 15px;
+    }
+    
+    .skill-card,
+    .achievement-card,
+    .certification-card {
+        padding: 20px;
+    }
+}

@@ -29,6 +29,63 @@ document.addEventListener("click", function (event) {
     // Save the selected theme to local storage
     localStorage.setItem("selectedTheme", themeFile);
 
+    // Animation on scroll functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const animateOnScroll = () => {
+                const cards = document.querySelectorAll('.skill-card, .achievement-card, .certification-card');
+                
+                cards.forEach((card, index) => {
+                    const cardPosition = card.getBoundingClientRect().top;
+                    const screenPosition = window.innerHeight / 1.3;
+                    
+                    if (cardPosition < screenPosition) {
+                        // Add staggered delay based on index
+                        setTimeout(() => {
+                            card.classList.add('show');
+                        }, 150 * (index % 4));
+                    }
+                });
+            };
+            
+            // Run on initial load
+            animateOnScroll();
+            
+            // Run on scroll
+            window.addEventListener('scroll', animateOnScroll);
+        });
+      // Scroll animation for sections
+document.addEventListener('DOMContentLoaded', function() {
+    const animateOnScroll = () => {
+        const cards = document.querySelectorAll('.skill-card, .achievement-card, .certification-card');
+        const windowHeight = window.innerHeight;
+        
+        cards.forEach((card, index) => {
+            const cardPosition = card.getBoundingClientRect().top;
+            const animationPoint = windowHeight - 100;
+            
+            if (cardPosition < animationPoint) {
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 150 * (index % 3));
+            }
+        });
+    };
+    
+    // Initialize cards as hidden
+    document.querySelectorAll('.skill-card, .achievement-card, .certification-card').forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'all 0.6s ease';
+    });
+    
+    // Run on load
+    animateOnScroll();
+    
+    // Run on scroll
+    window.addEventListener('scroll', animateOnScroll);
+});
+
     
 
     
