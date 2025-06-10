@@ -547,6 +547,19 @@ footer a {
     text-align: center;
 }
 
+/* Generic section heading styling */
+.skills-section h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+/* Highlighted part of the heading */
+.skills-section h2 span {
+  color: var(--primary);
+}
+
+
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -606,7 +619,16 @@ footer a {
     padding: 80px 20px;
     text-align: center;
 }
+.achievements-section h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+}
 
+/* Highlighted part of the heading */
+.achievements-section h2 span {
+  color: var(--primary);
+}
 .achievements-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -675,7 +697,16 @@ footer a {
     padding: 80px 20px;
     text-align: center;
 }
+.certifications-section h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+}
 
+/* Highlighted part of the heading */
+.certifications-section h2 span {
+  color: var(--primary);
+}
 .certifications-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
