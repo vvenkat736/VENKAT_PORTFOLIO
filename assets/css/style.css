@@ -246,7 +246,7 @@ section.projects-section {
 }
 
 .projects-card-box:hover {
-  box-shadow: 3px 5px 20px #613026;
+  box-shadow: 5px 5px 20px #613026;
   transition: all 0.5s ease 0s;
   transform: translateY(-2px);
 }
@@ -576,7 +576,8 @@ footer a {
 
 .skill-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 5px 10px 20px rgb(224, 93, 6);
+}
 }
 
 .skill-icon {
@@ -657,7 +658,7 @@ footer a {
 
 .achievement-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 5px 10px 20px rgb(224, 93, 6);
 }
 
 .achievement-icon {
@@ -724,7 +725,7 @@ footer a {
 
 .certification-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 5px 10px 20px rgb(224, 93, 6);
 }
 
 .certification-icon {

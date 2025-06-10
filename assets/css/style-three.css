@@ -579,7 +579,7 @@ footer a {
 
 .skill-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 5px 10px 20px rgb(3, 197, 240);
 }
 
 .skill-icon {
@@ -660,8 +660,7 @@ footer a {
 
 .achievement-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
+    box-shadow: 5px 10px 20px rgb(3, 197, 240);
 
 .achievement-icon {
     font-size: 2rem;
@@ -688,6 +687,7 @@ footer a {
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 600;
+}
 }
 
 /* Certifications Section */
@@ -727,7 +727,7 @@ footer a {
 
 .certification-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 5px 10px 20px rgb(3, 197, 240);
 }
 
 .certification-icon {
