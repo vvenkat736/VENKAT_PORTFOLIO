@@ -28,5 +28,9 @@ document.addEventListener("click", function (event) {
 
     // Save the selected theme to local storage
     localStorage.setItem("selectedTheme", themeFile);
+
+    
+
+    
   }
 });
