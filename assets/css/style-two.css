@@ -119,7 +119,7 @@ ul.social-icons {
 
 .social-icons li a {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   font-size: 18px;
   transition: all 0.3s ease 0s;
 }
@@ -130,13 +130,13 @@ ul.social-icons {
 
 .hero-buttons button > a {
   text-decoration: none;
-  color: #ffe600;
+  color: #fff;
 }
 
 /* buttons */
 .btn {
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 2px;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease 0s;
@@ -155,7 +155,7 @@ ul.social-icons {
 
 .btn-dark-outlined {
   background-color: var(--dark-primary);
-  border: 2px solid var(--primary);
+  border: 1px solid var(--primary);
   color: var(--primary);
   border-radius: 5px;
   font-weight: 600;
@@ -184,7 +184,7 @@ section.about-section {
   padding: 2px;
   border-radius: 50%;
   border: 3px solid var(--primary);
-  box-shadow: 5px 5px 30px #f3ff07;
+  box-shadow: 3px 5px 30px #ffea02;
   object-fit: cover;
 }
 
@@ -246,7 +246,7 @@ section.projects-section {
 }
 
 .projects-card-box:hover {
-  box-shadow: 5px 5px 20px #e8f406;
+  box-shadow: 3px 5px 20px #bbb50d;
   transition: all 0.5s ease 0s;
   transform: translateY(-2px);
 }
@@ -254,13 +254,13 @@ section.projects-section {
 .projects-card-box__icons > i {
   font-size: 30px;
   border-radius: 50%;
-  border: 1px solid var(--dark-secondary);
+  border: 1px solid var(--primary);
   padding: 20px;
 }
 
 .projects-card-box:hover .projects-card-box__icons > i {
   color: var(--primary);
-  background-color: var(--dark-secondary);
+  background-color: var(--dark-primary);
   transition: all 0.5s ease 0s;
 }
 
@@ -282,7 +282,7 @@ section.projects-section {
 }
 
 .projects-card-box__buttons button {
-  background-color: var(--dark-primary);
+  background-color: var(--dark-secondary);
 }
 
 .projects-card-box__buttons button > a {
@@ -293,7 +293,7 @@ section.projects-section {
 
 /* Contact Section */
 section.contact-section {
-  background-color: var(--dark-primary);
+  background-color: var(--dark-secondary);
   color: #fff;
   text-align: center;
   padding: 30px;
@@ -350,7 +350,7 @@ textarea:focus {
 }
 
 .contact__github button:hover {
-  background-color: #fec404;
+  background-color: #030303;
 }
 
 /* Footer */
@@ -380,47 +380,47 @@ footer a {
 }
 
 .footer__theme1 {
-  color: #de7d06;
+  color: #ffb20b;
   background-color: transparent;
-  border: 1px solid #ff5d06;
+  border: 1px solid #9e5a00;
   transition: all 0.5s ease 0s;
 }
 
 .footer__theme1:hover {
-  background-color: #e46803;
+  background-color: #db920a;
   color: #fff;
   transition: all 0.5s ease 0s;
 }
 
 .footer__theme2 {
-  color: #c303038a;
+  color: #e62305;
   background-color: transparent;
-  border: 1px solid #fc0000;
+  border: 1px solid #ff0000;
   transition: all 0.5s ease 0s;
 }
 
 .footer__theme2:hover {
-  background-color: #fb0000;
+  background-color: #e40b0b;
   color: #fff;
   transition: all 0.5s ease 0s;
 }
 
 .footer__theme3 {
-  color: #1e06f5;
+  color: #3313e9;
   background-color: transparent;
-  border: 1px solid #20b5fa;
+  border: 1px solid #0ba3df;
   transition: all 0.5s ease 0s;
 }
 
 .footer__theme3:hover {
-  background-color: #1c0df3;
+  background-color: #3729ff;
   color: #fff;
   transition: all 0.5s ease 0s;
 }
 
 .active-theme {
-  background-color: #fa0d0d;
-  color: rgba(255, 255, 255, 0.964);
+  background-color: hsl(0, 100%, 50%);
+  color: white;
 }
 
 /* Media queries */
@@ -523,13 +523,13 @@ footer a {
 .business-card-front {
   background-color: #fff;
   color: #333;
-  border: 2px solid #ee0707;
+  border: 2px solid #fde300;
 }
 
 /* Back Side */
 .business-card-back {
-  background-color: #ffc400;
-  color: white;
+  background-color: #e1dd07;
+  color: rgb(0, 0, 0);
   transform: rotateY(180deg);
 }
 
@@ -576,7 +576,7 @@ footer a {
 
 .skill-card:hover {
     transform: translateY(-5px);
-    box-shadow: 5px 10px 20px rgb(212, 255, 0);
+    box-shadow: 5px 10px 20px rgb(240, 240, 3);
 }
 
 .skill-icon {
@@ -657,8 +657,7 @@ footer a {
 
 .achievement-card:hover {
     transform: translateY(-5px);
-    box-shadow: 5px 10px 20px rgb(255, 242, 3);
-}
+    box-shadow: 5px 10px 20px rgb(240, 212, 3);
 
 .achievement-icon {
     font-size: 2rem;
@@ -681,10 +680,11 @@ footer a {
     display: inline-block;
     padding: 5px 15px;
     background: var(--primary);
-    color: rgb(0, 0, 0);
+    color: white;
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 600;
+}
 }
 
 /* Certifications Section */
@@ -724,7 +724,7 @@ footer a {
 
 .certification-card:hover {
     transform: translateY(-5px);
-    box-shadow: 5px 10px 20px rgb(255, 187, 0);
+    box-shadow: 5px 10px 20px rgb(240, 240, 3);
 }
 
 .certification-icon {
@@ -754,7 +754,7 @@ footer a {
     display: inline-block;
     padding: 6px 12px;
     background: var(--primary);
-    color: rgb(0, 0, 0);
+    color: rgb(8, 8, 8);
     border-radius: 4px;
     text-decoration: none;
     font-size: 0.8rem;

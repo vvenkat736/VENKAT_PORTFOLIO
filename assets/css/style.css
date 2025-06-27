@@ -184,7 +184,7 @@ section.about-section {
   padding: 2px;
   border-radius: 50%;
   border: 3px solid var(--primary);
-  box-shadow: 3px 5px 30px #ff6a07;
+  box-shadow: 3px 5px 30px #e78208;
   object-fit: cover;
 }
 
@@ -218,7 +218,7 @@ section.about-section {
 
 /* Projects Section */
 section.projects-section {
-  background-color: var(--dark-secondary);
+  background-color: var(--dark-primary);
   color: #fff;
   padding: 50px 120px;
 }
@@ -240,13 +240,13 @@ section.projects-section {
   width: 33.33%;
   margin: 35px 10px;
   padding: 33px;
-  background-color: var(--dark-primary);
+  background-color: var(--dark-secondary);
   border-radius: 5px;
   transition: all 0.5s ease 0s;
 }
 
 .projects-card-box:hover {
-  box-shadow: 5px 5px 20px #613026;
+  box-shadow: 3px 5px 20px #e88903;
   transition: all 0.5s ease 0s;
   transform: translateY(-2px);
 }
@@ -254,13 +254,13 @@ section.projects-section {
 .projects-card-box__icons > i {
   font-size: 30px;
   border-radius: 50%;
-  border: 1px solid var(--dark-secondary);
+  border: 1px solid var(--primary);
   padding: 20px;
 }
 
 .projects-card-box:hover .projects-card-box__icons > i {
   color: var(--primary);
-  background-color: var(--dark-secondary);
+  background-color: var(--dark-primary);
   transition: all 0.5s ease 0s;
 }
 
@@ -282,7 +282,7 @@ section.projects-section {
 }
 
 .projects-card-box__buttons button {
-  background-color: var(--dark-primary);
+  background-color: var(--dark-secondary);
 }
 
 .projects-card-box__buttons button > a {
@@ -293,7 +293,7 @@ section.projects-section {
 
 /* Contact Section */
 section.contact-section {
-  background-color: var(--dark-primary);
+  background-color: var(--dark-secondary);
   color: #fff;
   text-align: center;
   padding: 30px;
@@ -380,47 +380,47 @@ footer a {
 }
 
 .footer__theme1 {
-  color: #de7d06;
+  color: #ffb20b;
   background-color: transparent;
-  border: 1px solid #a04800;
+  border: 1px solid #9e5a00;
   transition: all 0.5s ease 0s;
 }
 
 .footer__theme1:hover {
-  background-color: #e46803;
+  background-color: #db920a;
   color: #fff;
   transition: all 0.5s ease 0s;
 }
 
 .footer__theme2 {
-  color: #c30303;
+  color: #e62305;
   background-color: transparent;
-  border: 1px solid #ff5555;
+  border: 1px solid #ff0000;
   transition: all 0.5s ease 0s;
 }
 
 .footer__theme2:hover {
-  background-color: #ff5555;
+  background-color: #e40b0b;
   color: #fff;
   transition: all 0.5s ease 0s;
 }
 
 .footer__theme3 {
-  color: #1e06f5;
+  color: #3313e9;
   background-color: transparent;
-  border: 1px solid #20b5fa;
+  border: 1px solid #0ba3df;
   transition: all 0.5s ease 0s;
 }
 
 .footer__theme3:hover {
-  background-color: #1c0df3;
+  background-color: #3729ff;
   color: #fff;
   transition: all 0.5s ease 0s;
 }
 
 .active-theme {
-  background-color: #fab30d;
-  color: rgba(255, 255, 255, 0.964);
+  background-color: hsl(36, 100%, 47%);
+  color: white;
 }
 
 /* Media queries */
@@ -523,12 +523,12 @@ footer a {
 .business-card-front {
   background-color: #fff;
   color: #333;
-  border: 2px solid #ee5c07;
+  border: 2px solid #f1870f;
 }
 
 /* Back Side */
 .business-card-back {
-  background-color: #e66306;
+  background-color: #f4870b;
   color: white;
   transform: rotateY(180deg);
 }
@@ -576,8 +576,7 @@ footer a {
 
 .skill-card:hover {
     transform: translateY(-5px);
-    box-shadow: 5px 10px 20px rgb(224, 93, 6);
-}
+    box-shadow: 5px 10px 20px rgb(240, 153, 3);
 }
 
 .skill-icon {
@@ -658,8 +657,7 @@ footer a {
 
 .achievement-card:hover {
     transform: translateY(-5px);
-    box-shadow: 5px 10px 20px rgb(224, 93, 6);
-}
+    box-shadow: 5px 10px 20px rgb(253, 135, 0);
 
 .achievement-icon {
     font-size: 2rem;
@@ -686,6 +684,7 @@ footer a {
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 600;
+}
 }
 
 /* Certifications Section */
@@ -725,7 +724,7 @@ footer a {
 
 .certification-card:hover {
     transform: translateY(-5px);
-    box-shadow: 5px 10px 20px rgb(224, 93, 6);
+    box-shadow: 5px 10px 20px rgb(249, 192, 7);
 }
 
 .certification-icon {
